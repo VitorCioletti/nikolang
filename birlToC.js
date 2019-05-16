@@ -13,20 +13,19 @@ module.exports = function (birlCode) {
     if (code == null) return "";
 
     //Traduzindo a MAIN
-    code = code.replace(/(HORA DO SHOW)(?=(?:[^"]|"[^"]*")*$)/g, 'int main (void) {'); 
+    code = code.replace(/(DEIXA EU TRABALHAR)(?=(?:[^"]|"[^"]*")*$)/g, 'int main (void) {'); 
     //Traduzindo o BIRL
-    code = code.replace(/(BIRL)(?=(?:[^"]|"[^"]*")*$)/g, '}');
+    code = code.replace(/(PORRA)(?=(?:[^"]|"[^"]*")*$)/g, '}');
     //Traduzindo printf
     code = code.replace(/(CE QUER VER ESSA PORRA[\?]?)(?=(?:[^"]|"[^"]*")*$)/g, 'printf');
     //Traduzindo scanf
-    code = code.replace(/(QUE QUE CE QUER MONSTR[AÃ]O[\?]?)(?=(?:[^"]|"[^"]*")*$)/g, 'scanf');
+    code = code.replace(/(QUE QUE CE TA FALANDO[\?]?)(?=(?:[^"]|"[^"]*")*$)/g, 'scanf');
     //Traduzindo if
-    code = code.replace(/(ELE QUE A GENTE QUER[\?]?)(?=(?:[^"]|"[^"]*")*$)(.*)/g, 'if $2 {');
+    code = code.replace(/(COMO ASSIM CE FALA[\?]?)(?=(?:[^"]|"[^"]*")*$)(.*)/g, 'if $2 {');
     //Traduzindo else
-    code = code.replace(/(N[AÃ]O VAI DAR N[AÃ]O)(?=(?:[^"]|"[^"]*")*$)/g, '} else {');
+    code = code.replace(/(CE TA BURRO[\?]?)(?=(?:[^"]|"[^"]*")*$)/g, '} else {');
     //Traduzindo else if
-    code = code.replace(/(QUE NUM VAI DAR O QUE[\?]?)(?=(?:[^"]|"[^"]*")*$)(.*)/g, '} else if $2 {');
-    code = code.replace(/(QUE N[AÃ]O VAI DAR O QUE[\?]?)(?=(?:[^"]|"[^"]*")*$)(.*)/g, '} else if $2 {');
+    code = code.replace(/(CE TA USANDO UMA DROGA[\?]?)(?=(?:[^"]|"[^"]*")*$)(.*)/g, '} else if $2 {');
     //Traduzindo while
     code = code.replace(/(NEGATIVA BAMBAM)(?=(?:[^"]|"[^"]*")*$)(.*)/g, 'while $2 {');
     //Traduzindo for

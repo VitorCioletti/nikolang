@@ -38,9 +38,9 @@ module.exports = function (birlCode) {
     code = code.replace(/(AJUDA O MALUCO TA DOENTE)(?=(?:[^"]|"[^"]*")*$)/g, ' ');
     code = code.replace(/(AJUDA O MALUCO QUE TA DOENTE)(?=(?:[^"]|"[^"]*")*$)/g, ' ');
     //Traduzindo parada no código
-    code = code.replace(/(SAI FILH[OA] DA PUTA)(?=(?:[^"]|"[^"]*")*$)/g, 'break');
+    code = code.replace(/(NINGU[ÉE]M QUER ISSO)(?=(?:[^"]|"[^"]*")*$)/g, 'break');
     //Traduzindo continuar o código
-    code = code.replace(/(VAMO MONSTRO)(?=(?:[^"]|"[^"]*")*$)/g, 'continue');
+    code = code.replace(/(PARTIU)(?=(?:[^"]|"[^"]*")*$)/g, 'continue');
 
     //Traduzindo os tipos de dados
     code = code.replace(/(FRANGO)(?=(?:[^"]|"[^"]*")*$)/g, 'char');

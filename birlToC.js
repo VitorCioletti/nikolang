@@ -17,7 +17,7 @@ module.exports = function (birlCode) {
     //Traduzindo o BIRL
     code = code.replace(/(PORRA)(?=(?:[^"]|"[^"]*")*$)/g, '}');
     //Traduzindo printf
-    code = code.replace(/(OLHA ESSA MERDA[\?]?)(?=(?:[^"]|"[^"]*")*$)/g, 'printf');
+    code = code.replace(/(OLHA ESSA MERDA)(?=(?:[^"]|"[^"]*")*$)/g, 'printf');
     //Traduzindo scanf
     code = code.replace(/(QUE QUE CE TA FALANDO[\?]?)(?=(?:[^"]|"[^"]*")*$)/g, 'scanf');
     //Traduzindo if

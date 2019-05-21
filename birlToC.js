@@ -43,7 +43,7 @@ module.exports = function (birlCode) {
 
     //Traduzindo os tipos de dados
     code = code.replace(/(BOBO)(?=(?:[^"]|"[^"]*")*$)/g, 'char');
-    code = code.replace(/(COCO)(?=(?:[^"]|"[^"]*")*$)/g, 'short');
+    code = code.replace(/(TRISTEZA)(?=(?:[^"]|"[^"]*")*$)/g, 'short');
     code = code.replace(/(BOSTA)(?=(?:[^"]|"[^"]*")*$)/g, 'int');
     code = code.replace(/(MERDA)(?=(?:[^"]|"[^"]*")*$)/g, 'long');
     code = code.replace(/(DESGRA[CÇ]A)(?=(?:[^"]|"[^"]*")*$)/g, 'float');

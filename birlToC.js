@@ -27,29 +27,28 @@ module.exports = function (birlCode) {
     //Traduzindo else if
     code = code.replace(/(CE TA USANDO UMA DROGA[\?]?)(?=(?:[^"]|"[^"]*")*$)(.*)/g, '} else if $2 {');
     //Traduzindo while
-    code = code.replace(/(NEGATIVA BAMBAM)(?=(?:[^"]|"[^"]*")*$)(.*)/g, 'while $2 {');
+    code = code.replace(/(REUNI[AÃ]O DE NOVO)(?=(?:[^"]|"[^"]*")*$)(.*)/g, 'while $2 {');
     //Traduzindo for
-    code = code.replace(/(MAIS QUERO MAIS)(?=(?:[^"]|"[^"]*")*$)(.*)/g, 'for $2 {');
+    code = code.replace(/(MAIS UMA REUNI[AÃ]O)(?=(?:[^"]|"[^"]*")*$)(.*)/g, 'for $2 {');
     //Traduzindo declaração de função
-    code = code.replace(/(O[H]? O HOM[EI][M]? A[IÍ] PO[ \t]*\()(?=(?:[^"]|"[^"]*")*$)(.*)(\))/g, '$2 {');
+    code = code.replace(/(O[H]? OS V[ÉE]I PELADO)(?=(?:[^"]|"[^"]*")*$)(.*)(\))/g, '$2 {');
     //Traduzindo retorno da função
-    code = code.replace(/(BORA CUMPAD[EI])(?=(?:[^"]|"[^"]*")*$)/g, 'return');
+    code = code.replace(/(BORA TRABALHAR)(?=(?:[^"]|"[^"]*")*$)/g, 'return');
     //Traduzindo chamada de função
-    code = code.replace(/(AJUDA O MALUCO TA DOENTE)(?=(?:[^"]|"[^"]*")*$)/g, ' ');
-    code = code.replace(/(AJUDA O MALUCO QUE TA DOENTE)(?=(?:[^"]|"[^"]*")*$)/g, ' ');
+    code = code.replace(/(SOU JESUS)(?=(?:[^"]|"[^"]*")*$)/g, ' ');
     //Traduzindo parada no código
     code = code.replace(/(NINGU[ÉE]M QUER ISSO)(?=(?:[^"]|"[^"]*")*$)/g, 'break');
     //Traduzindo continuar o código
     code = code.replace(/(PARTIU)(?=(?:[^"]|"[^"]*")*$)/g, 'continue');
 
     //Traduzindo os tipos de dados
-    code = code.replace(/(FRANGO)(?=(?:[^"]|"[^"]*")*$)/g, 'char');
-    code = code.replace(/(MONSTRO)(?=(?:[^"]|"[^"]*")*$)/g, 'int');
-    code = code.replace(/(MONSTRINHO)(?=(?:[^"]|"[^"]*")*$)/g, 'short');
-    code = code.replace(/(MONSTR[ÃA]O)(?=(?:[^"]|"[^"]*")*$)/g, 'long');
-    code = code.replace(/(TRAP[EÉ]ZIO DESCENDENTE)(?=(?:[^"]|"[^"]*")*$)/g, 'double');
-    code = code.replace(/(TRAP[EÉ]ZIO)(?=(?:[^"]|"[^"]*")*$)/g, 'float');
-    code = code.replace(/(B[IÍ]CEPS)(?=(?:[^"]|"[^"]*")*$)/g, 'unsigned');
+    code = code.replace(/(BOBO)(?=(?:[^"]|"[^"]*")*$)/g, 'char');
+    code = code.replace(/(COCO)(?=(?:[^"]|"[^"]*")*$)/g, 'short');
+    code = code.replace(/(BOSTA)(?=(?:[^"]|"[^"]*")*$)/g, 'int');
+    code = code.replace(/(MERDA)(?=(?:[^"]|"[^"]*")*$)/g, 'long');
+    code = code.replace(/(DESGRA[CÇ]A)(?=(?:[^"]|"[^"]*")*$)/g, 'float');
+    code = code.replace(/(MUITO DESGRA[CÇ]A)(?=(?:[^"]|"[^"]*")*$)/g, 'double');
+    code = code.replace(/(TCHURURU)(?=(?:[^"]|"[^"]*")*$)/g, 'unsigned');
 
     //Colocando as bibliotecas
     code = "#include <stdio.h>\n#include <math.h>\n\n" + code;
